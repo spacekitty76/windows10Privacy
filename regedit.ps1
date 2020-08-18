@@ -116,7 +116,268 @@ Function ChangeReg {
  $SvcName = "DisableAntiSpyware"
  $CheckValue = 1
  $SetData = 0
- #SmartScreen Disable
+ #App Install Control
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen"
+ $Value = "Enabled"
+ $SvcName = "ConfigureAppInstallControlEnabled"
+ $CheckValue = 1
+ $SetData = 0
+ #Cortana
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search"
+ $Value = "Enabled"
+ $SvcName = "AllowCortana"
+ $CheckValue = 0
+ $SetData = 0
+  #Cortana
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search"
+ $Value = "Enabled"
+ $SvcName = "AllowCortana"
+ $CheckValue = 0
+ $SetData = 0
+ #Search Location
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search"
+ $Value = "Enabled"
+ $SvcName = "AllowSearchToUseLocation"
+ $CheckValue = 0
+ $SetData = 0
+ #Web Search
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search"
+ $Value = "Enabled"
+ $SvcName = "DisableWebSearch"
+ $CheckValue = 1
+ $SetData = 0
+ #Connected Search
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search"
+ $Value = "Enabled"
+ $SvcName = "ConnectedSearchUseWeb"
+ $CheckValue = 0
+ $SetData = 0
+ #Consumer Search
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableWindowsConsumerFeatures"
+ $CheckValue = 1
+ $SetData = 0
+ #Silent App Install
+ $RegKey = "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "SilentInstalledAppsEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Auto Download
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore"
+ $Value = "Enabled"
+ $SvcName = "AutoDownload"
+ $CheckValue = 2
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "ContentDeliveryAllowed"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "OemPreinstalledAppsEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "PreInstalledAppsEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "PreInstalledAppsEverEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "RotatingLockScreenEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "RotatingLockScreenOverlayEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "SilentInstalledAppsEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "SoftLandingEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "SubscribedContent-338389Enabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Content Delivery
+ $RegKey = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager"
+ $Value = "Enabled"
+ $SvcName = "SystemPaneSuggestionsEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Game Broadcasting
+ $RegKey = "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR"
+ $Value = "Enabled"
+ $SvcName = "AppCaptureEnabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Game Broadcasting
+ $RegKey = "HKEY_CURRENT_USER\System\GameConfigStore"
+ $Value = "Enabled"
+ $SvcName = "GameDVR_Enabled"
+ $CheckValue = 0
+ $SetData = 0
+ #Game Broadcasting
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR"
+ $Value = "Enabled"
+ $SvcName = "AllowgameDVR"
+ $CheckValue = 0
+ $SetData = 0
+ #Game Broadcasting
+ $RegKey = "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xbgm"
+ $Value = "Enabled"
+ $SvcName = "Start"
+ $CheckValue = 4
+ $SetData = 0
+ #Meltdown/Spectre Patch
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat"
+ $Value = "Enabled"
+ $SvcName = "cadca5fe-87d3-4b96-b7fb-a231484277cc"
+ $CheckValue = 0
+ $SetData = 0
+ #Explorer Ads
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+ $Value = "Enabled"
+ $SvcName = "LaunchTo"
+ $CheckValue = 1
+ $SetData = 0
+ #Explorer Ads
+ $RegKey = "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+ $Value = "Enabled"
+ $SvcName = "ShowSyncProviderNotifications"
+ $CheckValue = 0
+ $SetData = 0
+ #Explorer Ads
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer"
+ $Value = "Enabled"
+ $SvcName = "HubMode"
+ $CheckValue = 1
+ $SetData = 0
+ #System Restore
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore"
+ $Value = "Enabled"
+ $SvcName = "DisableConfig"
+ $CheckValue = 1
+ $SetData = 0
+ #System Restore
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore"
+ $Value = "Enabled"
+ $SvcName = "DisableSR"
+ $CheckValue = 1
+ $SetData = 0
+ #System Restore
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore"
+ $Value = "Enabled"
+ $SvcName = "DisableConfig"
+ $CheckValue = 1
+ $SetData = 0
+ #System Restore
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore"
+ $Value = "Enabled"
+ $SvcName = "DisableSR"
+ $CheckValue = 1
+ $SetData = 0
+ #Error Reporting
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting"
+ $Value = "Enabled"
+ $SvcName = "Disabled"
+ $CheckValue = 1
+ $SetData = 0
+ #Error Reporting
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting"
+ $Value = "Enabled"
+ $SvcName = "Disabled"
+ $CheckValue = 1
+ $SetData = 0
+ #Account Sync
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync"
+ $Value = "Enabled"
+ $SvcName = "DisableSettingSync"
+ $CheckValue = 2
+ $SetData = 0
+ #Account Sync
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync"
+ $Value = "Enabled"
+ $SvcName = "DisableSettingSyncUserOverride"
+ $CheckValue = 1
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableWindowsSpotlightFeatures"
+ $CheckValue = 1
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableThirdPartySuggestions"
+ $CheckValue = 1
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableTailoredExperiencesWithDiagnosticData"
+ $CheckValue = 1
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "ConfigureWindowsSpotlight"
+ $CheckValue = 2
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableWindowsSpotlightOnActionCenter"
+ $CheckValue = 1
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableWindowsSpotlightOnSettings"
+ $CheckValue = 1
+ $SetData = 0
+ #Spotlight
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
+ $Value = "Enabled"
+ $SvcName = "DisableWindowsSpotlightWindowsWelcomeExperience"
+ $CheckValue = 1
+ $SetData = 0
+ #Delivery Optimization
+ $RegKey = "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization"
+ $Value = "Enabled"
+ $SvcName = "DODownloadMode"
+ $CheckValue = 0
+ $SetData = 0
+
+
+
+ #Smart Screen
  $RegKey = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost\EnableWebContentEvaluation"
  $Value = "Enabled"
  $SvcName = "Smart Screen"
